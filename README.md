@@ -19,5 +19,5 @@
 </div>
 <br/>
 
-## Apaixonado por Programação 😍✨
-## Em Busca do Junio 📚🔥
+## Apaixonado por Programação Front-End 😍✨
+## Em Busca do Junior 📚🔥
