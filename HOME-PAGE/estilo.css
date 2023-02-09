@@ -1,0 +1,315 @@
+*{
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(104, 104, 105);
+}
+ul{
+    list-style: none; 
+}
+body{
+    font-family: Inter;
+    font-weight: bolder;
+    overflow-x:hidden ;
+}
+nav{
+    display: flex;
+    gap: 200px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu a:hover{
+    color:rgb(246, 103, 103) ;
+}
+.menu1{
+
+    position: absolute;
+    border: 1px solid;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+.menu1 li{
+    margin-top: 50px;
+}
+/*FIM DO ESTILO HEADER*/
+
+main{
+    display: flex;
+    width: 77%;
+    height: 450px;
+}
+.bloco-img{
+    padding-right:25px;
+}
+.img{
+    height: 60%;
+    margin-left: 0;
+    background-image: url(assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+
+}
+.ativarMenu{
+    display: none;
+    cursor: pointer;
+}
+.bloco-h1{
+    display: flex;
+    align-items: center;
+    height: 40%;
+    margin-left: 0;
+}
+.bloco-h1 p{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(104, 104, 105)
+    
+}
+.bloco-h1 p a{
+    margin-left: 0;
+}
+
+.tiluto{
+    font-size: 40px;
+    width: 40%;
+    color: rgb(1, 1, 53);
+}
+.botao{
+    border: 0;
+    border-radius: 2px;
+    padding-top:10px;
+    padding-left:30px ;
+    padding-right: 30px;
+    padding-bottom:10px ;
+    background-color: rgb(246, 103, 103);
+    color: white;
+    margin-top: 20px;
+   
+}
+.botao:hover{
+    background-color: rgb(1, 1, 53) ;
+}
+.bloco2{
+    width: 630px;
+    padding: 40px;
+    padding-top: 10px;
+    background-color: rgb(1, 1, 53);
+}
+.bloco2 h1{
+    color: rgba(255, 166, 0, 0.813);
+    font-size: 50px;
+}
+.bloco2 h2{
+    font-size: 17px;
+    color: white;
+}
+.bloco2 h2:hover{
+    color:rgba(255, 166, 0, 0.813) ;
+}
+
+.p1{
+    font-size: 15px;
+    border-bottom: 1px solid;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    color: rgba(240, 248, 255, 0.672);
+}
+.p2{
+    font-size: 15px;
+    border-bottom: 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(240, 248, 255, 0.672);
+}
+.p3{
+    font-size: 15px;
+    padding-top: 20px;
+    color: rgba(240, 248, 255, 0.672);
+}
+
+/*FIM DO ESTILO DO MAIN*/
+
+footer{
+    display: flex;
+    width: 77%;
+    margin-top: 60px;
+}
+.estilobloco h1{
+    color: rgba(151, 151, 151, 0.672);
+    
+}
+.estilobloco h2{
+    font-size: 20px;
+    color: rgb(1, 1, 53);
+}
+.estilobloco h2:hover{
+    color: rgb(246, 103, 103);
+}
+
+.estilobloco p{
+    font-size:15px ;
+}
+.imgestilo{
+    height: 100%;
+    width: 185px;
+    gap: 8px;
+}
+.blocof1, .blocof2, .blocof3{
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    color: rgba(151, 151, 151, 0.672);
+}
+.foto1{
+    background-size: cover;
+    background-image: url(assets/images/image-retro-pcs.jpg);
+}
+.foto2{
+    background-size: cover;
+    background-image: url(assets/images/image-top-laptops.jpg);
+}
+.foto3{
+     background-size: cover;
+    background-image: url(assets/images/image-gaming-growth.jpg);
+}
+
+/* MOBILE*/
+@media screen and (max-width: 720px){
+    .menu{
+        display: none;
+    }
+    .menu1{
+        display: block;
+        border: 0;
+        background-color:white;
+        margin-top: 75px;
+        transform: translateX(100%);
+        
+
+    }
+    .menu1 li{
+        margin-top: 80px;
+
+    }
+    .ativarMenu{
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 50px;
+        background-size: cover;
+        background-image: url(assets/images/icon-menu.svg);
+    }
+        .closeMenu{
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 50px;
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        left: 60px;
+    }
+    .open{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: block;
+        border: 0;
+        background-color:white;
+        margin-top: 75px;
+        transform: translateX(0);
+        transition: .5s;
+    }
+    .open li{
+        margin-top: 80px;
+        margin-right: 70px;
+        border: 3px solid white;
+    }
+    .open li:hover{
+        border-bottom:3px solid;
+        color:rgb(246, 103, 103) ;
+    }
+    main{
+        
+        flex-direction: column;
+    }
+    .img{
+        position: relative;
+        right: 25px;
+        top: 60px;
+        height:400px;
+        width: 450px;
+        background-image: url(assets/images/image-web-3-mobile.jpg);
+        background-size: cover;
+    }
+    .menu-principal{
+        padding-bottom: 10px;
+    }
+    
+    .bloco-h1{
+        flex-direction: column;
+        margin: 80px;
+        width:450px;
+        position: relative;
+        right: 109px;
+    }
+    .bloco-h1 p{
+        margin-left:0px;
+        width: 98%;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    .tiluto{
+
+        margin-left: 0;
+        width: 65%;
+    }
+    .botao{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+    }
+    .bloco2{
+        position: relative;
+        width: 95%;
+        right: 30px;
+        
+
+    }
+    footer{
+        position: relative;
+        top: 800px;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .imgestilo{
+        border: 1px solid;
+        height: 150px;
+    }
+    .foto2{
+        width: 150px;
+    }
+
+    .foto3{
+        width: 170px;
+    }
+}
